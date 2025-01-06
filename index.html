@@ -4,8 +4,37 @@
     <meta charset="utf-8" />
     <title>Toluwase & Opemipo - Wedding Website</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="Toluwase & Opemipo Wedding" name="keywords" />
-    <meta content="Toluwase & Opemipo Wedding" name="description" />
+    <meta
+      name="keywords"
+      content="Toluwase Wedding, Opemipo Wedding, Nigerian Weddings, Wedding Ceremony, Wedding Party, Marriage Celebration, Toluwase & Opemipo Wedding Event, Romantic Weddings"
+    />
+    <meta
+      name="description"
+      content="Join us in celebrating the beautiful union of Toluwase & Opemipo at their wedding. Discover event details, RSVP, and share in the joy of their special day."
+    />
+
+    <!-- Open Graph Meta Tags (for social media sharing) -->
+    <meta property="og:title" content="Toluwase & Opemipo Wedding" />
+    <meta
+      property="og:description"
+      content="Celebrate the union of Toluwase & Opemipo. Get event details, RSVP, and share the love."
+    />
+    <meta property="og:image" content="URL_to_your_wedding_image.jpg" />
+    <meta property="og:url" content="https://example.com/wedding" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Toluwase & Opemipo Wedding" />
+    <meta
+      name="twitter:description"
+      content="Celebrate the love and joy of Toluwase & Opemipo's wedding. Find event details and RSVP today."
+    />
+    <meta name="twitter:image" content="URL_to_your_wedding_image.jpg" />
+
+    <!-- Author and Website Metadata -->
+    <meta name="author" content="Toluwase & Opemipo" />
+    <meta name="robots" content="index, follow" />
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon" />
@@ -789,12 +818,12 @@
                   ></textarea>
                 </div>
                 <button
-                class="btn btn-primary font-weight-bold py-3 px-5 rounded"
-                type="submit"
-                id="submitButton"
-              >
-                Submit
-              </button>
+                  class="btn btn-primary font-weight-bold py-3 px-5 rounded"
+                  type="submit"
+                  id="submitButton"
+                >
+                  Submit
+                </button>
               </form>
               <div id="status"></div>
             </div>
@@ -923,22 +952,24 @@
 
           const formData = new FormData(e.target);
           const data = Object.fromEntries(formData.entries());
-          const dataToSend =  {
+          const dataToSend = {
             from_name: data.name,
             to_name: "Toluwase&Opemipo",
             message: `Message: ${data.message}\nGuests: ${data.guests}\nAttendance: ${data.attendance}`,
-            reply_to: data.email
-          }          
+            reply_to: data.email,
+          };
 
           emailjs.send("service_bcbbw0v", "template_9smebii", dataToSend).then(
             function (response) {
               alert("Email sent successfully!");
               document.getElementById("status").innerText =
                 "Email sent successfully!";
-                submitButton.disabled = false;
+              submitButton.disabled = false;
             },
             function (error) {
-              alert("Failed to send email. Try again later. or send a mail directly to alomajaopemipo8@gmail.com");
+              alert(
+                "Failed to send email. Try again later. or send a mail directly to alomajaopemipo8@gmail.com"
+              );
               document.getElementById("status").innerText =
                 "Failed to send email. Try again later.";
               console.error("EmailJS Error:", error);
