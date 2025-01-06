@@ -6,7 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --blue: #007bff;
+  /* --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
@@ -26,7 +26,29 @@
   --warning: #ffc107;
   --danger: #dc3545;
   --light: #FFFFFF;
-  --dark: #121F38;
+  --dark: #121F38; */
+
+  --blue: #6EA8DA; /* Powder Blue */
+  --indigo: #BBA1D4; /* Lilac */
+  --purple: #A68AB3; /* Soft Purple for accent */
+  --pink: #D9A2D1; /* Subtle Pink (Optional Accent) */
+  --red: #E57373; /* Soft Red for alerts */
+  --orange: #F5A26F; /* Soft Orange for highlights */
+  --yellow: #FFDC81; /* Light Yellow for warning */
+  --green: #78C2A1; /* Soft Green for success */
+  --teal: #86C5CC; /* Powder Teal for variety */
+  --cyan: #7AB8D1; /* Cyan complementing powder blue */
+  --white: #FFFFFF; /* White */
+  --gray: #BDC3C7; /* Soft Gray */
+  --gray-dark: #95A5A6; /* Darker Gray */
+  --primary: #6EA8DA; /* Powder Blue */
+  --secondary: #BBA1D4; /* Lilac */
+  --success: #78C2A1; /* Soft Green */
+  --info: #7AB8D1; /* Cyan */
+  --warning: #FFDC81; /* Yellow */
+  --danger: #E57373; /* Red */
+  --light: #FFFFFF; /* White */
+  --dark: #121F38; /* Navy Blue */
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -152,7 +174,7 @@ sup {
 }
 
 a {
-  color: #E47A2E;
+  color: #F5A26F;
   text-decoration: none;
   background-color: transparent;
 }
