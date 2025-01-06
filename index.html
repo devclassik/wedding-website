@@ -19,8 +19,14 @@
       property="og:description"
       content="Celebrate the union of Toluwase & Opemipo. Get event details, RSVP, and share the love."
     />
-    <meta property="og:image" content="https://wedding-website-blond-alpha.vercel.app/img/carousel-1.jpg" />
-    <meta property="og:url" content="https://wedding-website-blond-alpha.vercel.app/" />
+    <meta
+      property="og:image"
+      content="https://wedding-website-blond-alpha.vercel.app/img/carousel-1.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://wedding-website-blond-alpha.vercel.app/"
+    />
     <meta property="og:type" content="website" />
 
     <!-- Twitter Card Meta Tags -->
@@ -30,7 +36,10 @@
       name="twitter:description"
       content="Celebrate the love and joy of Toluwase & Opemipo's wedding. Find event details and RSVP today."
     />
-    <meta name="twitter:image" content="https://wedding-website-blond-alpha.vercel.app/img/carousel-1.jpg" />
+    <meta
+      name="twitter:image"
+      content="https://wedding-website-blond-alpha.vercel.app/img/carousel-1.jpg"
+    />
 
     <!-- Author and Website Metadata -->
     <meta name="author" content="Toluwase & Opemipo" />
@@ -977,6 +986,36 @@
             }
           );
         });
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Toluwase & Opemipo Wedding",
+        "description": "Celebrate the union of Toluwase & Opemipo with family and friends. RSVP and join the joyous occasion.",
+        "startDate": "2025-02-14T10:00:00",
+        "endDate": "2025-02-14T20:00:00",
+        "eventStatus": "EventScheduled",
+        "eventAttendanceMode": "OfflineEventAttendanceMode",
+        "location": {
+          "@type": "Place",
+          "name": "Event Venue Name",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Wedding Lane",
+            "addressLocality": "City",
+            "addressRegion": "State",
+            "postalCode": "12345",
+            "addressCountry": "Country"
+          }
+        },
+        "image": ["URL_to_wedding_image.jpg"],
+        "organizer": {
+          "@type": "Person",
+          "name": "Toluwase & Opemipo",
+          "url": "https://example.com/wedding"
+        }
+      }
     </script>
   </body>
 </html>
